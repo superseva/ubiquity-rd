@@ -1,2 +1,2 @@
-# ubiquity-rd
+# ubiquityrd
 Ubiquity Regime Diabolique
