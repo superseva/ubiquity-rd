@@ -12,8 +12,8 @@ export class UbiquityRDActorSheet extends ActorSheet {
       classes: ["ubiquityrd", "sheet", "actor"],
       template: "systems/ubiquityrd/templates/actor/actor-sheet.html",
       width: 600,
-      height: 600,
-      tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "features" }]
+      height: 720,
+      tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "general" }]
     });
   }
 
@@ -68,9 +68,9 @@ export class UbiquityRDActorSheet extends ActorSheet {
    */
   _prepareCharacterData(context) {
     // Handle ability scores.
-    for (let [k, v] of Object.entries(context.system.abilities)) {
-      v.label = game.i18n.localize(CONFIG.BOILERPLATE.abilities[k]) ?? k;
-    }
+    // for (let [k, v] of Object.entries(context.system.attributes)) {
+    //   v.label = game.i18n.localize(CONFIG.UBIQUITYRD.attributes[k]) ?? k;
+    // }
   }
 
   /**
@@ -82,8 +82,8 @@ export class UbiquityRDActorSheet extends ActorSheet {
    */
   _prepareItems(context) {
     // Initialize containers.
-    const gear = [];
-    const features = [];
+    const item = [];
+    const talents = [];
     const spells = {
       0: [],
       1: [],
@@ -100,13 +100,13 @@ export class UbiquityRDActorSheet extends ActorSheet {
     // Iterate through items, allocating to containers
     for (let i of context.items) {
       i.img = i.img || DEFAULT_TOKEN;
-      // Append to gear.
+      // Append to item.
       if (i.type === 'item') {
-        gear.push(i);
+        item.push(i);
       }
-      // Append to features.
-      else if (i.type === 'feature') {
-        features.push(i);
+      // Append to talents.
+      else if (i.type === 'talent') {
+        talents.push(i);
       }
       // Append to spells.
       else if (i.type === 'spell') {
@@ -117,8 +117,8 @@ export class UbiquityRDActorSheet extends ActorSheet {
     }
 
     // Assign and return
-    context.gear = gear;
-    context.features = features;
+    context.item = item;
+    context.talents = talents;
     context.spells = spells;
   }
 

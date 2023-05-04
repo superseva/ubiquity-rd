@@ -38,6 +38,8 @@
   flex: 0;
 }
 
+//.sheet-body{color: rgb(63, 47, 31);}
+
 .sheet-body,
 .sheet-body .tab,
 .sheet-body .tab .editor {
@@ -52,4 +54,64 @@
   .tox-edit-area {
     padding: 0 8px;
   }
+}
+
+.medieval-box{
+  border-style: solid;
+  border-image: url(../assets/ui/box-border.png);
+  border-width: 10px;
+  border-image-slice: 10;
+  position: relative;
+  padding: 10px 0 0 0;
+  margin-bottom: 15px;
+  &.min-h-100{
+    min-height: 100px;
+  }
+  //background-color: white;
+  .box-title{
+    position: absolute;
+    border: 1px solid black;
+    background-color: #dbd9cd;
+    text-align: center;
+    align-items: center;
+    top: -1em;
+    left: 20px;
+    padding: 2px;
+    h2{
+      font-size: 0.75em;
+      border-bottom: none;
+      margin: 0;
+      padding: 0;
+      font-weight: 700;
+    }
+    a{
+      display: block;
+      font-size: 0.75em;
+      line-height: unset;
+      margin: 0;
+      padding: 0;
+    }
+    &.right{
+      left: unset;
+      right: 20px;
+    }    
+  }
+  
+  .grid{
+    margin: 0;
+    gap: 0 1em;
+  }
+
+  .attribute{
+    p{
+      margin: 0;
+      padding: 0;
+      font-weight: 900;
+    }
+  }
+}
+
+.num-2{
+  max-width: 2em;
+  text-align: center;
 }

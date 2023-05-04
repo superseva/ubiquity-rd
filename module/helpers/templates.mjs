@@ -7,7 +7,8 @@
   return loadTemplates([
 
     // Actor partials.
-    "systems/ubiquityrd/templates/actor/parts/actor-features.html",
+    "systems/ubiquityrd/templates/actor/parts/actor-general.html",
+    "systems/ubiquityrd/templates/actor/parts/actor-talents.html",
     "systems/ubiquityrd/templates/actor/parts/actor-items.html",
     "systems/ubiquityrd/templates/actor/parts/actor-spells.html",
     "systems/ubiquityrd/templates/actor/parts/actor-effects.html",

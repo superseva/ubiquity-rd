@@ -1,22 +1,22 @@
 {
-  "BOILERPLATE.AbilityStr": "Strength",
-  "BOILERPLATE.AbilityCon": "Constitution",
-  "BOILERPLATE.AbilityDex": "Dexterity",
-  "BOILERPLATE.AbilityInt": "Intelligence",
-  "BOILERPLATE.AbilityWis": "Wisdom",
-  "BOILERPLATE.AbilityCha": "Charisma",
+  "UBIQUITYRD.AbilityStr": "Strength",
+  "UBIQUITYRD.AbilityCon": "Constitution",
+  "UBIQUITYRD.AbilityDex": "Dexterity",
+  "UBIQUITYRD.AbilityInt": "Intelligence",
+  "UBIQUITYRD.AbilityWis": "Wisdom",
+  "UBIQUITYRD.AbilityCha": "Charisma",
 
-  "BOILERPLATE.AbilityStrAbbr": "str",
-  "BOILERPLATE.AbilityConAbbr": "con",
-  "BOILERPLATE.AbilityDexAbbr": "dex",
-  "BOILERPLATE.AbilityIntAbbr": "int",
-  "BOILERPLATE.AbilityWisAbbr": "wis",
-  "BOILERPLATE.AbilityChaAbbr": "cha",
+  "UBIQUITYRD.AbilityStrAbbr": "str",
+  "UBIQUITYRD.AbilityConAbbr": "con",
+  "UBIQUITYRD.AbilityDexAbbr": "dex",
+  "UBIQUITYRD.AbilityIntAbbr": "int",
+  "UBIQUITYRD.AbilityWisAbbr": "wis",
+  "UBIQUITYRD.AbilityChaAbbr": "cha",
 
-  "BOILERPLATE.EffectCreate": "Create Effect",
-  "BOILERPLATE.EffectToggle": "Toggle Effect",
-  "BOILERPLATE.EffectEdit": "Edit Effect",
-  "BOILERPLATE.EffectDelete": "Delete Effect",
+  "UBIQUITYRD.EffectCreate": "Create Effect",
+  "UBIQUITYRD.EffectToggle": "Toggle Effect",
+  "UBIQUITYRD.EffectEdit": "Edit Effect",
+  "UBIQUITYRD.EffectDelete": "Delete Effect",
 
-  "BOILERPLATE.Add": "Add"
+  "UBIQUITYRD.Add": "Add"
 }

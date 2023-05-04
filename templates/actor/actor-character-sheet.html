@@ -45,7 +45,8 @@
   {{!-- Sheet Tab Navigation --}}
   <nav class="sheet-tabs tabs" data-group="primary">
     {{!-- Default tab is specified in actor-sheet.mjs --}}
-    <a class="item" data-tab="features">Features</a>
+    <a class="item" data-tab="general">General</a>
+    <a class="item" data-tab="talents">Talents</a>
     <a class="item" data-tab="description">Description</a>
     <a class="item" data-tab="items">Items</a>
     <a class="item" data-tab="spells">Spells</a>
@@ -55,8 +56,12 @@
   {{!-- Sheet Body --}}
   <section class="sheet-body">
 
-    {{!-- Owned Features Tab --}}
-    <div class="tab features" data-group="primary" data-tab="features">
+    <div class="tab general" data-group="primary" data-tab="general">
+      {{> "systems/ubiquityrd/templates/actor/parts/actor-general.html"}}
+    </div>
+
+    {{!-- Owned Talents Tab --}}
+    <div class="tab talents" data-group="primary" data-tab="talents">
       <section class="grid grid-3col">
         <aside class="sidebar">
 
@@ -74,10 +79,10 @@
           </div>
         </aside>
 
-        {{!-- For the main features list, span the right two columns --}}
+        {{!-- For the main talents list, span the right two columns --}}
         <section class="main grid-span-2">
           {{!-- This is a Handlebars partial. They're stored in the `/parts` folder next to this sheet, and defined in module/helpers/templates.mjs --}}
-          {{> "systems/ubiquityrd/templates/actor/parts/actor-features.html"}}
+          {{> "systems/ubiquityrd/templates/actor/parts/actor-talents.html"}}
         </section>
 
       </section>
